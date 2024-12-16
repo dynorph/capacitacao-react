@@ -61,6 +61,9 @@ function App() {
           case "/":
           setRes(parseInt(n1) / parseInt(n2));
           break;
+
+          case "**":
+          setRes(parseInt(n1) ** parseInt(n2));
       
         default:
           break;
@@ -104,6 +107,7 @@ function App() {
           </article>
           
           <article id="operatorsGrid">
+            <button type="button" className="operatorButton" onClick={() => addOperator('**')}> ** </button>
             <button type="button" className="operatorButton" onClick={() => addOperator('/')}> ÷ </button>
             <button type="button" className="operatorButton" onClick={() => addOperator('*')}> x </button>
             <button type="button" className="operatorButton" onClick={() => addOperator('-')}> - </button>
