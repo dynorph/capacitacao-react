@@ -64,6 +64,7 @@ function App() {
 
           case "**":
           setRes(parseInt(n1) ** parseInt(n2));
+          break;
       
         default:
           break;
